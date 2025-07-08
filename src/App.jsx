@@ -4,12 +4,9 @@ import Main from "./components/Main";
 
 const App = () => {
   return (
-    <div className="w-full" style={{ maxWidth: "1440px" }}>
-      {/* Header Section */}
+    <div className="w-full min-w-[560px]">
       <Header />
-
-      {/* Main Layout */}
-      <div className="flex">
+      <div className="w-full max-w-[1440px] mx-auto flex px-4 md:px-6">
         <Sidebar />
         <div className="flex-1">
           <Main />
